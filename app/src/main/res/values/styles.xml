@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="TextStyle1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">3.3sp</item>
+        <item name="android:textColor">@color/almost_black</item>
+    </style>
+
+
+    <style name="TextStyle">
+        <item name="android:textSize">15.3sp</item>
+        <item name="android:lineSpacingExtra">6.7sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+    <style name="TextStyle28">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">13.3sp</item>
+        <item name="android:lineSpacingExtra">5.3sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle11">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">13.3sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+</resources>

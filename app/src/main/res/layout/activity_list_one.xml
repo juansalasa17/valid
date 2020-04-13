@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.valid.prueba.adapter.ListOneActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_8"
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:divider="@null"
+        android:elevation="2dp">
+
+        <TextView
+            style="@style/TextStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ibBack"
+            android:layout_marginRight="@dimen/margin_20"
+            android:fontFamily="@font/gotham_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_List_Artist" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Search"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar_main"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28"
+            android:hint="@string/txt_Search"
+            android:textSize="@dimen/margin_14"
+            android:paddingRight="@dimen/margin_12"
+            android:paddingTop="@dimen/margin_6"
+            android:elevation="@dimen/margin_12"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/margin_16"
+            android:paddingLeft="@dimen/margin_24"
+            android:fontFamily="@font/gotham_book"
+            android:drawableEnd="@drawable/img_search"
+            android:background="@drawable/btn_shadow"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Title"
+        android:paddingTop="@dimen/margin_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Search"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/txt_Title_Catalog"
+            android:layout_width="match_parent"
+            style="@style/TextStyle28"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:fontFamily="@font/gotham_medium"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/Title"
+        android:id="@+id/recyclerCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="vertical"
+        android:layout_marginTop="2dp" />
+
+</RelativeLayout>

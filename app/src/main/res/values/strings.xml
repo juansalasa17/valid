@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ARTISTAS</string>
+    <!-- Servers -->
+    <string name="app_server">@string/app_server_des</string>
+
+
+    <string name="app_server_des">http://ws.audioscrobbler.com/2.0</string>
+
+    <string name="btn_ok">Aceptar</string>
+
+    <string name="msg_no_network">Conectate a la red para continuar.</string>
+
+    <string name="txt_Loading" tools:ignore="TypographyEllipsis">Cargando...por favor espere.</string>
+    <string name="txt_description">ARTISTA</string>
+
+    <string name="txt_main">Menu Principal</string>
+    <string name="btn_main_one">Listado Artistas</string>
+    <string name="btn_main_two">Listado ????</string>
+
+    <string name="txt_List_Artist">Top Artistas</string>
+
+    <string name="txt_Search">Buscar artistas</string>
+    <string name="txt_Title_Catalog">Selecciona su artista favorito</string>
+
+    <string name="todo">TODO</string>
+
+    <string name="txt_Url">Url</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_message"
+    android:minHeight="130dp">
+
+    <ImageView
+        android:id="@+id/imgMessage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_24"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        style="@style/TextStyle11"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:fontFamily="@font/gotham_medium"
+        android:maxLines="5" />
+
+    <ImageButton
+        android:id="@+id/btnCloseMessage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/btn_close" />
+
+    <Button
+        android:id="@+id/btnOkMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:background="@drawable/bg_buttons_orange"
+        android:fontFamily="@font/gotham_bold"
+        android:lineSpacingExtra="6.7sp"
+        android:text="@string/btn_ok"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14.7sp" />
+
+</RelativeLayout>

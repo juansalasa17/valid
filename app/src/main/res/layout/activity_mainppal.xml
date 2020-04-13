@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPpalActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:elevation="2dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            style="@style/TextStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@+id/ibBack"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/gotham_medium"
+            android:text="@string/txt_main" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btListArtist"
+            android:layout_width="@dimen/margin_266"
+            android:layout_height="@dimen/margin_71"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:background="@drawable/btn_main_oven"
+            android:textAllCaps="false"
+            android:fontFamily="@font/gotham_bold"
+            android:text="@string/btn_main_one"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_16" />
+
+        <Button
+            android:text="@string/btn_main_two"
+            android:layout_width="@dimen/margin_266"
+            android:layout_height="@dimen/margin_71"
+            android:fontFamily="@font/gotham_bold"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_16"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_main_oven" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
