@@ -49,18 +49,6 @@
             android:textColor="@color/white"
             android:textSize="@dimen/margin_16" />
 
-        <Button
-            android:text="@string/btn_main_two"
-            android:layout_width="@dimen/margin_266"
-            android:layout_height="@dimen/margin_71"
-            android:fontFamily="@font/gotham_bold"
-            android:layout_marginLeft="@dimen/margin_24"
-            android:layout_marginRight="@dimen/margin_24"
-            android:layout_marginBottom="@dimen/margin_24"
-            android:textColor="@color/white"
-            android:textSize="@dimen/margin_16"
-            android:textAllCaps="false"
-            android:background="@drawable/btn_main_oven" />
 
     </LinearLayout>
 
